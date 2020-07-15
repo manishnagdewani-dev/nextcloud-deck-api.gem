@@ -1,17 +1,17 @@
+require 'dry-struct'
 require 'json'
 
 
-class Card
-  attr_reader :description
-  attr_reader :title
+module Types
+  include Dry.Types()
+end
 
-  def initialize(title, description)
-    @title = title
-    @description = description
-  end
+class Card < Dry::Struct
+  attribute :description, Types::String
+  attribute :title, Types::String
 
   def to_json
-    {:title => @title,
-     :description => @description}.to_json
+    {title: self.title,
+     description: self.description}.to_json
   end
 end

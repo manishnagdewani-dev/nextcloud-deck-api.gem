@@ -1,26 +1,29 @@
+require 'dry-struct'
 require 'json'
 
+require 'card'
 
-class Stack
-  attr_reader :id
-  attr_reader :cards
-  attr_reader :title
 
-  def initialize(id, title, cards)
-    @id = id
-    @cards = cards
-    @title = title
-  end
+module Types
+  include Dry.Types()
+end
+
+class Stack < Dry::Struct
+  transform_keys(&:to_sym)
+
+  attribute :id, Types::Integer
+  attribute :cards, Types::Array.of(::Card)
+  attribute :title, Types::String
 
   def self.from_json(json)
     data = JSON.parse json
 
     if data.class == Array
       data.map do |datum|
-        Stack.new(datum['id'], datum['title'], datum['cards'])
+        Stack.new(datum)
       end
     else
-      Stack.new(data['id'], data['title'], data['cards'])
+      Stack.new(data)
     end
   end
 end

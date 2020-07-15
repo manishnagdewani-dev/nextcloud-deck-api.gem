@@ -10,5 +10,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/Pamplemousse/nextcloud-deck-api'
   s.license = 'MIT'
 
+  s.add_runtime_dependency 'dry-struct', ['~>1.0']
+
   s.add_development_dependency 'rspec', ['~>3.9']
 end
