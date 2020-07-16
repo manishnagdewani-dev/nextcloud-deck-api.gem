@@ -9,5 +9,13 @@ Implementation based on [Deck's API documentation](https://deck.readthedocs.io/e
 ## Development
 
 ```
-gem build && gem install nextcloud-deck-api
+# build and install the gem locally
+bundle exec rake install
+
+# run the tests
+bundle exec rake spec
 ```
+
+## Code of Conduct
+
+Everyone interacting in the `nextcloud-deck-api` project’s codebase, and issue tracker is expected to follow the [code of conduct](https://github.com/Pamplemousse/nextcloud-deck-api/blob/master/CODE_OF_CONDUCT.md).

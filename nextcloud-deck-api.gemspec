@@ -1,6 +1,11 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'nextcloud-deck-api'
+
+
 Gem::Specification.new do |s|
   s.name = 'nextcloud-deck-api'
-  s.version = '0.0.1'
+  s.version = DeckAPI::VERSION
   s.date = '2020-07-12'
   s.summary = 'Interact with the API of the Deck application for Nextcloud.'
   s.description = ''
@@ -12,5 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'dry-struct', ['~>1.0']
 
+  s.add_development_dependency 'bundler', "~> 1.17"
+  s.add_development_dependency 'rake', "~> 13.0"
   s.add_development_dependency 'rspec', ['~>3.9']
 end
