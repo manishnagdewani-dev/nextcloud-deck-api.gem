@@ -1,4 +1,4 @@
-require 'board'
+require 'deck/board'
 
 
 describe 'Board' do

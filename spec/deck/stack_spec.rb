@@ -1,4 +1,4 @@
-require 'stack'
+require 'deck/stack'
 
 
 describe 'Stack' do

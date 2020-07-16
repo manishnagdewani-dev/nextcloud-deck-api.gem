@@ -1,4 +1,4 @@
-require 'card'
+require 'deck/card'
 
 
 describe 'Card' do
