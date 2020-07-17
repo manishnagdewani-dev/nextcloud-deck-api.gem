@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'nextcloud-deck-api'
+require 'pry'
 
 
 RSpec.configure do |config|

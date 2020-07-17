@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'dry-struct', ['~>1.0']
 
   s.add_development_dependency 'bundler', "~> 1.17"
+  s.add_development_dependency 'pry', ['~>0.13']
+  s.add_development_dependency 'pry-byebug', ['~>3.9']
   s.add_development_dependency 'rake', "~> 13.0"
   s.add_development_dependency 'rspec', ['~>3.9']
 end
