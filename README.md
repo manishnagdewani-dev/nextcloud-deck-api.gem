@@ -1,5 +1,6 @@
 # nextcloud-deck-api
 
+![](https://travis-ci.org/Pamplemousse/nextcloud-deck-api.svg?branch=master)
 
 Interact with the [Deck application for Nextcloud](https://apps.nextcloud.com/apps/deck) using Ruby.
 
