@@ -2,6 +2,7 @@ require 'bundler/setup'
 require 'nextcloud-deck-api'
 require 'pry'
 
+ENV['APPLICATION_MODE'] = 'test'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
