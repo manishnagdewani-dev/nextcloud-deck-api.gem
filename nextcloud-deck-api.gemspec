@@ -9,7 +9,7 @@ $LOAD_PATH.unshift(::File.join(::File.dirname(__FILE__), "lib"))
 Gem::Specification.new do |s|
   s.name = 'nextcloud-deck-api'
 #   s.version = DeckAPI::VERSION
-  s.version = 1.0.0
+  s.version = '1.0.0'
   s.date = '2020-07-12'
   s.summary = 'Interact with the API of the Deck application for Nextcloud.'
   s.description = ''
