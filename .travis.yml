@@ -7,8 +7,8 @@ rvm:
 before_install: 
   - gem install bundler
   - gem install rspec
-	- gem install rubocop
-	- gem install dry-struct
+  - gem install rubocop
+  - gem install dry-struct
 	
 install: true
 script:
