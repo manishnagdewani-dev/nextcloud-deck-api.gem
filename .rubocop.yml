@@ -1,4 +1,8 @@
 ---
+AllCops:
+  Include:
+    - '.lib/**/*.rb'
+    
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
@@ -15,6 +19,4 @@ Style/Documentation:
 Style/WordArray:
   Enabled: false
 
-AllCops:
-  Include:
-    - 'lib/**/*'
+
