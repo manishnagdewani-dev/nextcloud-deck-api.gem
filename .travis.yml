@@ -10,6 +10,7 @@ before_install:
   - gem install rubocop
   - gem install dry-struct
   - gem install faraday
+  - gem install pry-byebug
   
 install: bundle exec rake install
 script:
