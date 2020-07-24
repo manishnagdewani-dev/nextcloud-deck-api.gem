@@ -3,7 +3,7 @@ sudo: false
 language: ruby
 rvm:
   - 2.6.6
-
+install: true
 script:
   - bundle exec rake rubocop
   - bundle exec rake spec
