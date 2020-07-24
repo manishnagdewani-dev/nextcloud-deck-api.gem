@@ -8,8 +8,8 @@ before_install:
   - gem install bundler
   - gem install rspec
   - gem install rubocop
-  - gem dry-struct
-  - gem faraday
+  - gem install dry-struct
+  - gem install faraday
   
 install: true
 script:
