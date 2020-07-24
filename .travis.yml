@@ -11,5 +11,4 @@ before_install:
   
 install: true
 script:
-  - bundle exec rake rubocop
   - bundle exec rake spec
