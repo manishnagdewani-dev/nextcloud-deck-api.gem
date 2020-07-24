@@ -9,4 +9,5 @@ before_install:
 
 install: bundle install
 script:
-  - rake spec
+  - bundle exec rake rubocop
+  - bundle exec rake spec
