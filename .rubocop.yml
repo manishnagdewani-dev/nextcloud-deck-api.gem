@@ -14,3 +14,7 @@ Style/Documentation:
 
 Style/WordArray:
   Enabled: false
+
+AllCops:
+  Include:
+    - 'lib/**/*'
