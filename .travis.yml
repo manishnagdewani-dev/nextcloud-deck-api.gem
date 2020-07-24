@@ -6,12 +6,7 @@ rvm:
   - 2.6.6
 before_install: 
   - gem install bundler
-  - gem install rspec
-  - gem install rubocop
-  - gem install dry-struct
-  - gem install faraday
-  - gem install pry-byebug
-  
+
 install: bundle exec rake install
 script:
   - rake spec
