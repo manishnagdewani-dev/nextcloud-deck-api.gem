@@ -11,4 +11,4 @@ before_install:
   
 install: true
 script:
-  - bundle exec rake spec
+  - rake spec
