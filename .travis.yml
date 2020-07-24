@@ -11,6 +11,6 @@ before_install:
   - gem install dry-struct
   - gem install faraday
   
-install: true
+install: bundle exec rake install
 script:
   - rake spec
