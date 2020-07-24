@@ -9,7 +9,7 @@ before_install:
   - gem install rspec
   - gem install rubocop
   - gem install dry-struct
-	
+  
 install: true
 script:
   - bundle exec rake rubocop
