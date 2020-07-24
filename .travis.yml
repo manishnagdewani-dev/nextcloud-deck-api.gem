@@ -7,8 +7,6 @@ rvm:
 
 before_install: gem install bundler
 
-install: bundle exec rake install
-
 script:
   - bundle exec rake rubocop
   - bundle exec rake spec
