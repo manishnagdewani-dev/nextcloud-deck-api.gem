@@ -9,6 +9,8 @@ before_install:
   - gem install rspec
   - gem install rubocop
   - gem install dry-struct
+  - gem install faraday
+  - gem install pry
   
 install: true
 script:
