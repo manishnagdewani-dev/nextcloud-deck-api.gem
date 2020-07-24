@@ -4,7 +4,7 @@
 # $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 $LOAD_PATH.unshift(::File.join(::File.dirname(__FILE__), "lib"))
 
-require 'nextcloud-deck-api'
+#require 'nextcloud-deck-api'
 
 Gem::Specification.new do |s|
   s.name = 'nextcloud-deck-api'
